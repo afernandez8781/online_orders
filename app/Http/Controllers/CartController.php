@@ -16,4 +16,3 @@ class CartController extends Controller
     	return back()->with(compact('notification'));
     }
 }
-// 9c836149b7630cdd22e52a3fcc72df793f36f34fe64a0c7f
