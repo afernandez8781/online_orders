@@ -29,4 +29,15 @@ class Product extends Model
     	//default
     	return '/images/products/default.jpg';
     }
+
+    public function getCategoryNameAttribute()
+    {
+        if ($this->category){
+            if ($this->category->status == 'activated')
+            {
+                return $this->category->name;
+            }
+        }
+        return 'General';
+    }
 }
